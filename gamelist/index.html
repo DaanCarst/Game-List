@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daan's Lists</title>
+  </head>
+  <body>
+    <div class="content">
+      <p>Hello There</p>
+    </div>
+
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-image: 
+          url('/angel.svg'),
+          url('/bat.svg'),
+          url('/top.svg'),
+          url('/castlel.svg'),
+          url('/castler.svg');
+        background-position: 
+          top left,
+          top right,
+          top center,
+          bottom left,
+          bottom right;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        background-size: auto; /* You can also use fixed sizes like 100px or percentages */
+      }
+
+      @media (max-width: 1200px) {
+        body {
+          background-image: 
+            url('/angel.svg'),
+            url('/bat.svg'),
+            url('/castlel.svg'),
+            url('/castler.svg');
+          background-position: 
+            top left,
+            top right,
+            bottom left,
+            bottom right;
+          background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+          background-size: auto;
+        }
+      }
+
+      .content {
+        position: relative;
+        z-index: 1; /* Places content above background */
+        padding: 20px;
+      }
+    </style>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
